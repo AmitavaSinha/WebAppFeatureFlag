@@ -48,7 +48,7 @@ namespace WebFormsApplication
                 //Literal1.Text += "</div>";
                 Literal1.Text += "<div class='panel-footer'>&#8377;" + dr[2] + "&nbsp;";
                 Literal1.Text += "<div>Quantity" + "&nbsp;";
-                Literal1.Text += "<input type = 'number' min = '1' max = '100'>";
+                Literal1.Text += "<input type = 'number' min ='1' max ='100'>";
                 Literal1.Text += "</div>";
                 Literal1.Text += "<a href='ProductDetails.aspx?pid=" + dr[0] + "' class='pull-right btn btn-primary' style='margin-top: -7px;'>Order Now</a></div>";
                 Literal1.Text += "</div>";

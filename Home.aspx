@@ -55,7 +55,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="Account.aspx"><span class="glyphicon glyphicon-user"></span>Your Account</a></li>
+                    <li><a href="Account.aspx"><span class="glyphicon glyphicon-user"></span>amitava.sinha@hcl.com</a></li>
                     <li><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
                 </ul>
             </div>
@@ -72,12 +72,12 @@
     </form>
 
     <footer class="container-fluid text-center">
-        <p>Website Credits</p>
+        <%--<p>Website Credits</p>
         <form class="form-inline">
             Get deals:
     <input type="email" class="form-control" size="50" placeholder="Email Address">
             <button type="button" class="btn btn-danger">Sign Up</button>
-        </form>
+        </form>--%>
     </footer>
 </body>
 </html>

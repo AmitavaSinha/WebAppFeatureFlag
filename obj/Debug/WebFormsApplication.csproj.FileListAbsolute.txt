@@ -1,3 +1,8 @@
+C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.csprojAssemblyReference.cache
+C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.csproj.CoreCompileInputs.cache
+C:\COE\ExampleWebFormsApplication\bin\WebFormsApplication.dll.config
+C:\COE\ExampleWebFormsApplication\bin\WebFormsApplication.dll
+C:\COE\ExampleWebFormsApplication\bin\WebFormsApplication.pdb
 C:\COE\ExampleWebFormsApplication\bin\FeatureToggle.Common.dll
 C:\COE\ExampleWebFormsApplication\bin\FeatureToggle.dll
 C:\COE\ExampleWebFormsApplication\bin\Microsoft.Win32.Primitives.dll
@@ -18,11 +23,6 @@ C:\COE\ExampleWebFormsApplication\bin\System.Security.Cryptography.Primitives.dl
 C:\COE\ExampleWebFormsApplication\bin\System.Security.Cryptography.X509Certificates.dll
 C:\COE\ExampleWebFormsApplication\bin\System.Xml.ReaderWriter.dll
 C:\COE\ExampleWebFormsApplication\bin\System.Diagnostics.DiagnosticSource.xml
-C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.csprojAssemblyReference.cache
-C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.csproj.CoreCompileInputs.cache
 C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.csproj.CopyComplete
-C:\COE\ExampleWebFormsApplication\bin\WebFormsApplication.dll.config
-C:\COE\ExampleWebFormsApplication\bin\WebFormsApplication.dll
-C:\COE\ExampleWebFormsApplication\bin\WebFormsApplication.pdb
 C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.dll
 C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.pdb

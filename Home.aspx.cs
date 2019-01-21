@@ -49,16 +49,20 @@ namespace WebFormsApplication
                 {
                     Literal1.Text += "<div class='col-sm-4'>";
                     Literal1.Text += "<div class='panel panel-primary'>";
-                    Literal1.Text += "<div class='panel-heading'>" + dr[1] + "</div>";
-                    //Literal1.Text += "<div class='panel-body'>";
+                    Literal1.Text += "<div class='panel-heading'>" + dr[1] + "     - Price : Rs. "+ dr[2] + "</div>";
+                    Literal1.Text += "<div class='panel-body'>";
                     //Literal1.Text += "<img src='" + dr[3] + "' class='img-responsive' style='width:100%' alt='Image'>";
                     //Literal1.Text += "</div>";
-                    Literal1.Text += "<div class='panel-footer'>&#8377;" + dr[2] + "&nbsp;";
+                    //Literal1.Text += "<div class='panel-footer'>&#8377;" + dr[2] + "&nbsp;";
                     Literal1.Text += "<input id = 'hdn" + dr[0] + "' type = 'hidden' value = '" + dr[2] + "' />";
                     Literal1.Text += "<div>Quantity" + "&nbsp;";
-                    Literal1.Text += "<input type = 'number' id= 'txt" + dr[0] + "' runat='server' min ='1' max ='100' onchange='myFunction(this.value,"+ dr[0] + ")'>";
+                    Literal1.Text += "<input type = 'number' id= 'txt" + dr[0] + "' runat='server' min ='1' max ='100' style='width: 50px;' onchange ='myFunction(this.value,"+ dr[0] + ")'>";
+                    Literal1.Text += "&nbsp;&nbsp;&nbsp;";
+                    Literal1.Text += "<label>Rs. </label>";
+                    Literal1.Text += "<label  class='lbl' id='lbl" + dr[0] + "' runat='server'/>";
                     Literal1.Text += "</div>";
-                    Literal1.Text += "<a href='ProductDetails.aspx?pid=" + dr[0] + "'></a>"+ "<label  class='lbl' id='lbl" + dr[0] + "' runat='server'/>" + "</div>";
+                    Literal1.Text += "</div>";
+                    //Literal1.Text += "<a href='ProductDetails.aspx?pid=" + dr[0] + "'></a>" + "</div>";
                     Literal1.Text += "</div>";
                     Literal1.Text += "</div>";
                     iCounter++;
@@ -77,8 +81,10 @@ namespace WebFormsApplication
             
             string amount = hdnTotal.Value.ToString();
             string x= await  ValidateAmount(amount);
+            Literal2.Text += "<center style='margin-bottom:25px; font-weight:700'>"+  x + "</center>";
+           
             //ScriptManager.RegisterClientScriptBlock(Page, typeof(Page), "ClientScript", "alert("+ x +")", true);
-            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + x + "');", true);
+            //ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + x + "');", true);
         }
 
         private async Task<string> ValidateAmount(string amount)

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Async="true" EnableEventValidation="false"  Inherits="WebFormsApplication.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Async="true" EnableEventValidation="false"   Inherits="WebFormsApplication.Home" %>
 
 <!DOCTYPE html>
 
@@ -67,7 +67,7 @@
 <body>
     <div class="jumbotron">
         <div class="container text-center">
-            <h1>Online Request Applications</h1>
+            <h2>Online Request Applications for Office Items</h2>
         </div>
     </div>
 
@@ -100,6 +100,7 @@
     <form id="form1" runat="server">
 
         <div class="container">
+            <asp:Literal ID="Literal2" runat="server"></asp:Literal>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
             <input type="hidden" id="hdnTotal" runat="server" />
         </div>

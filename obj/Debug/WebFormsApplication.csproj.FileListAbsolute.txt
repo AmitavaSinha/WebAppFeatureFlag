@@ -26,3 +26,11 @@ C:\COE\ExampleWebFormsApplication\bin\System.Diagnostics.DiagnosticSource.xml
 C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.csproj.CopyComplete
 C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.dll
 C:\COE\ExampleWebFormsApplication\obj\Debug\WebFormsApplication.pdb
+C:\COE\ExampleWebFormsApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\COE\ExampleWebFormsApplication\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\COE\ExampleWebFormsApplication\bin\Microsoft.Extensions.Logging.dll
+C:\COE\ExampleWebFormsApplication\bin\Newtonsoft.Json.dll
+C:\COE\ExampleWebFormsApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\COE\ExampleWebFormsApplication\bin\Microsoft.Extensions.Logging.xml
+C:\COE\ExampleWebFormsApplication\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\COE\ExampleWebFormsApplication\bin\Newtonsoft.Json.xml

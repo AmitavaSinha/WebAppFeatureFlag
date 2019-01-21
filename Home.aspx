@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebFormsApplication.Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Async="true" EnableEventValidation="false"  Inherits="WebFormsApplication.Home" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+       function myFunction(value, id) {
+           //alert("The input value has changed. The new value is: " + id);
+           var labelID = '#' + 'lbl' + id.toString();
+           var hdnValue = '#' + 'hdn' + id.toString();
+           var Price = $(hdnValue).val();
+           //alert(Price)
+           //alert(value)
+           var vTotal = Price * value;
+           //alert(labelID)
+           $(labelID).text(vTotal.toString());
+        }
+
+        function findTotal(){
+            var sum = 0;
+            
+		//iterate through each textboxes and add the values
+		$(".lbl").each(function() {
+			//add only if the value is number
+			if(!isNaN(this.textContent) && this.textContent.length!=0) {
+				sum += parseFloat(this.textContent);
+			}
+            //alert(this.textContent);
+            });
+            //alert(sum);
+        hdnTotal.value = sum;
+        }
+
+    </script>
+
     <script src="js/bootstrap.min.js"></script>
     <style>
         /* Remove the navbar's default rounded borders and increase the bottom margin */
@@ -27,6 +57,11 @@
             background-color: #f2f2f2;
             padding: 25px;
         }
+        .lbl {
+				background-color: #FEFFB0;
+				font-weight: bold;
+				text-align: right;
+			}
     </style>
 </head>
 <body>
@@ -66,18 +101,19 @@
 
         <div class="container">
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+            <input type="hidden" id="hdnTotal" runat="server" />
         </div>
         <br>
         <br />
     </form>
 
     <footer class="container-fluid text-center">
-        <%--<p>Website Credits</p>
+       <%-- <p>Website Credits</p>--%>
         <form class="form-inline">
-            Get deals:
-    <input type="email" class="form-control" size="50" placeholder="Email Address">
-            <button type="button" class="btn btn-danger">Sign Up</button>
-        </form>--%>
+           <%-- Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">--%>
+            <button id="btnOrderNow" type="button" class="btn btn-danger" runat="server" onclick='findTotal();' onserverclick="btnOrderNow_Click">Order Now</button>
+        </form>
     </footer>
 </body>
 </html>
